@@ -33,6 +33,17 @@
 ## Methods
 
 - [B Method](https://en.wikipedia.org/wiki/B-Method) - A formal method for software development and system design, based on refinement and proof.
+    - [Atelier B](https://www.atelierb.eu/) - An industrial tool for the B-Method, supporting formal specification, design, and code generation.
+    - [ProB](https://prob.hhu.de/) - An animator, constraint solver, and model checker for the B-Method and Event-B.
+    - [Event-B](http://www.event-b.org/) - A formal method extending the B-Method, designed for modeling and reasoning about complex systems.
+
+## Big Tech Companies Using Formal Methods
+
++ [Amazon Web Services (AWS)](https://www.amazon.science/blog/how-aws-uses-formal-methods) - AWS uses TLA+ and other formal methods to verify the correctness of critical systems like S3, DynamoDB, and EC2.
++ [Microsoft](https://www.microsoft.com/en-us/research/project/z3-3/) - Microsoft Research developed Z3 SMT solver and uses formal methods in Windows kernel verification, Azure services, and cloud infrastructure.
++ [Intel](https://www.intel.com/content/www/us/en/research/overview.html) - Intel uses formal verification extensively for CPU design validation and microprocessor verification.
++ [Meta (Facebook)](https://engineering.fb.com/2019/04/08/developer-tools/infer/) - Meta developed Infer, a static analysis tool based on formal methods, used to find bugs in code before production.
++ [Apple](https://swift.org/) - Apple incorporates formal methods in the development of Swift and for security-critical components of iOS and macOS.
 
 ## Books and Tutorials
 
