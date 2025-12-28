@@ -51,4 +51,4 @@
 + [Software Foundations](https://softwarefoundations.cis.upenn.edu/) - A series of textbooks on formal verification using Coq.
 + [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/) - A book by Adam Chlipala on programming with dependent types using Coq.
 + [Software Abstractions](https://mitpress.mit.edu/books/software-abstractions) - A book by Daniel Jackson on software modeling and analysis using Alloy.
-+ [Pratical Alloy](https://practicalalloy.github.io/) - A practical guide to using Alloy for software modeling.
++ [Practical Alloy](https://practicalalloy.github.io/) - A practical guide to using Alloy for software modeling.
