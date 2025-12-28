@@ -1,0 +1,34 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Make check-links.sh executable
+        run: chmod +x check-links.sh
+      
+      - name: Run link checker
+        id: link-check
+        run: bash check-links.sh
+      
+      - name: Create workflow summary
+        if: always()
+        run: |
+          echo "## Link Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "This workflow checks all links but does not block commits." >> $GITHUB_STEP_SUMMARY
+          echo "Review the output above for detailed diagnostics." >> $GITHUB_STEP_SUMMARY
