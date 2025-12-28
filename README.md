@@ -17,7 +17,8 @@
 
 + [Alloy](https://alloytools.org/) - A lightweight modeling language for software design.
 + [TLA+](https://lamport.azurewebsites.net/tla/tla.html) - A formal specification language for concurrent and distributed systems.
-+ [SMT]
++ [SMT](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories) Solvers:
+    + [SMT-LIB](http://smt-lib.org/) - The standard input language for SMT solvers.
     + [Z3](https://www.microsoft.com/en-us/research/project/z3-3/) - A high-performance theorem prover developed by Microsoft Research.
          + [Programming Z3](https://theory.stanford.edu/~nikolaj/programmingz3.html) - Programming Z3, a guide to using Z3 (Python).
     + [CVC4](https://cvc4.github.io/) - An efficient SMT solver for various theories.
