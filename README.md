@@ -1,2 +1,5 @@
-# awesome-formal-methods
-Awesome resources on formal methods
+# Awesome Formal Methods
+
+## Languages
+
+- [Alloy](https://alloytools.org/) - A lightweight modeling language for software design.
