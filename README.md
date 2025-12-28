@@ -44,7 +44,7 @@
 - [seL4](https://sel4.systems/) - The world's first operating system kernel with an end-to-end proof of implementation correctness and security enforcement, verified in Isabelle/HOL.
 - [Project Everest](https://project-everest.github.io/) - A verified HTTPS ecosystem including verified implementations of TLS, cryptographic algorithms, and the underlying programming language (F*).
 - [Verifast](https://github.com/verifast/verifast) - A research prototype tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs.
-- [IronFleet](https://github.com/Microsoft/Ironclad) - A methodology for building practical distributed systems with machine-checked proofs of correctness, developed at Microsoft Research.
+- [IronFleet](https://github.com/Microsoft/IronFleet) - A methodology for building practical distributed systems with machine-checked proofs of correctness, developed at Microsoft Research.
 - [Fiat Cryptography](https://github.com/mit-plv/fiat-crypto) - A library for synthesizing correct-by-construction cryptographic arithmetic implementations from high-level specifications.
 
 ## Big Tech Companies Using Formal Methods
