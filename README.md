@@ -10,8 +10,8 @@
     + [Repo](https://github.com/agda/agda) - The official Agda repository.
 + [Dafny](https://dafny.org/) - An imperative programming language with built-in specification constructs.
 + [Idris](https://www.idris-lang.org/) - A general-purpose functional programming language with dependent types.
-+ [F*](https://www.fstar-lang.org/) - A functional programming language aimed at program verification.
-+ [Lean](https://leanprover.github.io/) - A theorem prover and programming language designed for formalizing mathematics.
++ [F*](https://fstar-lang.org/) - A functional programming language aimed at program verification.
++ [Lean](https://lean-lang.org/) - A theorem prover and programming language designed for formalizing mathematics.
 + [Eiffel](https://www.eiffel.org/) - An object-oriented programming language with built-in support for design by contract.
 + [ADA](https://www.adacore.com/) - A structured, statically typed, imperative, and object-oriented high-level computer programming language, extended from Pascal and other languages.
     + [SPARK](https://www.adacore.com/sparkpro) - A subset of Ada designed for high-integrity and safety-critical systems. Not to be confused with the Spark big data processing engine.
@@ -19,16 +19,16 @@
 ## Solvers and Model Checkers
 
 + [Alloy](https://alloytools.org/) - A lightweight modeling language for software design.
-+ [TLA+](https://lamport.azurewebsites.net/tla/tla.html) - A formal specification language for concurrent and distributed systems.
++ [TLA+](https://lamport.org/tla/tla.html) - A formal specification language for concurrent and distributed systems.
 + [SMT](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories) Solvers:
     + [SMT-LIB](http://smt-lib.org/) - The standard input language for SMT solvers.
     + [Z3](https://www.microsoft.com/en-us/research/project/z3-3/) - A high-performance theorem prover developed by Microsoft Research.
          + [Programming Z3](https://theory.stanford.edu/~nikolaj/programmingz3.html) - Programming Z3, a guide to using Z3 (Python).
-    + [CVC4](https://cvc4.github.io/) - An efficient SMT solver for various theories.
+    + [CVC5](https://cvc5.github.io/) - An efficient open-source SMT solver for various theories.
 + [Alloy Analyzer](https://alloytools.org/) - A tool for analyzing Alloy models.
 + [SPIN](http://spinroot.com/spin/whatispin.html) - A popular model checker for verifying concurrent systems.
 + [NuSMV](https://nusmv.fbk.eu/) - A symbolic model checker for finite state systems.
-+ [TLA+ Toolbox](https://lamport.azurewebsites.net/tla/toolbox.html) - An integrated development environment for TLA+ specifications.
++ [TLA+ Toolbox](https://lamport.org/tla/toolbox.html) - An integrated development environment for TLA+ specifications.
 
 ## Methods
 
