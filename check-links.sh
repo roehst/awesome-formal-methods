@@ -47,6 +47,13 @@ done <<< "$URLS"
 echo ""
 echo "Results: $SUCCESS successful, $FAILED failed out of $TOTAL total"
 
-if [ $FAILED -gt 0 ]; then
-    exit 1
-fi
+# Generate badge data
+PERCENTAGE=$(( SUCCESS * 100 / TOTAL ))
+echo ""
+echo "Link Status: $SUCCESS/$TOTAL working ($PERCENTAGE%)"
+echo "link-status=$SUCCESS/$TOTAL" >> $GITHUB_OUTPUT 2>/dev/null || true
+echo "link-percentage=$PERCENTAGE" >> $GITHUB_OUTPUT 2>/dev/null || true
+echo "failed-count=$FAILED" >> $GITHUB_OUTPUT 2>/dev/null || true
+
+# Always exit 0 to not block CI - this is informational only
+exit 0

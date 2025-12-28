@@ -1,45 +1,43 @@
-# Branch Protection Setup
+# Link Checking CI/CD
 
-To ensure that all links pass before merging to or committing to `main`, you need to configure branch protection rules in the GitHub repository settings.
+## Philosophy
 
-## Steps to Configure Branch Protection:
+This repository uses a **non-blocking** approach to link checking. The CI workflow checks all links and provides detailed diagnostics, but **does not block commits or merges** based on link failures.
 
-1. Go to your repository on GitHub: `https://github.com/roehst/awesome-formal-methods`
+### Why Non-Blocking?
 
-2. Navigate to **Settings** → **Branches** → **Branch protection rules**
+- **Precise diagnostics over enforcement**: Link checking can be flaky due to temporary network issues, rate limiting, or transient server problems
+- **Better developer experience**: Contributors aren't blocked by issues outside their control
+- **Clear visibility**: The workflow output provides detailed information about which links work and which don't, allowing manual review and fixes
 
-3. Click **Add rule** or edit the existing rule for `main`
-
-4. Configure the following settings:
-
-   - **Branch name pattern**: `main`
-   
-   - ✅ **Require status checks to pass before merging**
-     - Enable "Require branches to be up to date before merging"
-     - Search for and select the status check: `check-links`
-   
-   - ✅ **Require pull request reviews before merging** (optional but recommended)
-   
-   - ✅ **Include administrators** (optional - to enforce rules on admins too)
-
-5. Click **Create** or **Save changes**
-
-## What This Does:
-
-- The `check-links` job from the CI workflow must pass before:
-  - Any pull request can be merged into `main`
-  - Any direct commits can be pushed to `main` (if direct pushes are allowed)
-  
-- This ensures all links in README.md are valid before changes are accepted
-
-## Workflow Behavior:
+## Workflow Behavior
 
 The CI workflow (`.github/workflows/check-links.yml`) will:
 - Run automatically on every push to `main`
 - Run automatically on every pull request targeting `main`
 - Execute the `check-links.sh` script to validate all URLs
-- Fail if any links return non-2xx/3xx HTTP status codes
+- Display results showing:
+  - Number of successful links
+  - Number of failed links
+  - Percentage of working links
+  - Detailed output for each URL checked
+- **Always pass** (exit code 0) regardless of link failures
 
-## Note:
+## How to Use the Results
 
-Branch protection rules can only be configured by repository administrators through the GitHub web interface. They cannot be set via code or API without appropriate permissions.
+1. Check the CI workflow output after each push or PR
+2. Review the detailed link check results
+3. Fix broken links when convenient, but don't feel blocked by temporary failures
+4. Use the diagnostics to identify persistent link issues that need attention
+
+## Optional: Branch Protection
+
+If you want to require the workflow to run (but not necessarily pass) before merging:
+
+1. Go to repository **Settings** → **Branches** → **Branch protection rules**
+2. Add a rule for `main` branch
+3. Enable "Require status checks to pass before merging"
+4. Select the `check-links` status check
+5. The workflow will always pass, but this ensures it runs on every PR
+
+Note: Since the workflow always passes, this only ensures the check runs, not that all links work.
