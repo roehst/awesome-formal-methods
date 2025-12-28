@@ -48,7 +48,11 @@ echo ""
 echo "Results: $SUCCESS successful, $FAILED failed out of $TOTAL total"
 
 # Generate badge data
-PERCENTAGE=$(( SUCCESS * 100 / TOTAL ))
+if [ $TOTAL -gt 0 ]; then
+    PERCENTAGE=$(( SUCCESS * 100 / TOTAL ))
+else
+    PERCENTAGE=0
+fi
 echo ""
 echo "Link Status: $SUCCESS/$TOTAL working ($PERCENTAGE%)"
 echo "link-status=$SUCCESS/$TOTAL" >> $GITHUB_OUTPUT 2>/dev/null || true
