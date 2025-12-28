@@ -37,6 +37,16 @@
     - [ProB](https://prob.hhu.de/) - An animator, constraint solver, and model checker for the B-Method and Event-B.
     - [Event-B](http://www.event-b.org/) - A formal method extending the B-Method, designed for modeling and reasoning about complex systems.
 
+## Large Projects
+
+- [CompCert](https://compcert.org/) - A formally verified optimizing C compiler, proven correct in Coq. Guarantees that the generated assembly code behaves exactly as prescribed by the semantics of the source C program.
+- [CakeML](https://cakeml.org/) - A verified implementation of a significant subset of Standard ML, with proofs of correctness for the compiler, runtime system, and basis library in HOL4.
+- [seL4](https://sel4.systems/) - The world's first operating system kernel with an end-to-end proof of implementation correctness and security enforcement, verified in Isabelle/HOL.
+- [Project Everest](https://project-everest.github.io/) - A verified HTTPS ecosystem including verified implementations of TLS, cryptographic algorithms, and the underlying programming language (F*).
+- [Verifast](https://github.com/verifast/verifast) - A research prototype tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs.
+- [IronFleet](https://github.com/Microsoft/Ironclad) - A methodology for building practical distributed systems with machine-checked proofs of correctness, developed at Microsoft Research.
+- [Fiat Cryptography](https://github.com/mit-plv/fiat-crypto) - A library for synthesizing correct-by-construction cryptographic arithmetic implementations from high-level specifications.
+
 ## Big Tech Companies Using Formal Methods
 
 - [Amazon Web Services (AWS)](https://www.amazon.science/blog/how-aws-uses-formal-methods) - AWS uses TLA+ and other formal methods to verify the correctness of critical systems like S3, DynamoDB, and EC2.
