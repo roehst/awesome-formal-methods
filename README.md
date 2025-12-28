@@ -12,6 +12,9 @@
 + [Idris](https://www.idris-lang.org/) - A general-purpose functional programming language with dependent types.
 + [F*](https://www.fstar-lang.org/) - A functional programming language aimed at program verification.
 + [Lean](https://leanprover.github.io/) - A theorem prover and programming language designed for formalizing mathematics.
++ [Eiffel](https://www.eiffel.org/) - An object-oriented programming language with built-in support for design by contract.
++ [ADA](https://www.adacore.com/) - A structured, statically typed, imperative, and object-oriented high-level computer programming language, extended from Pascal and other languages.
+    + [SPARK](https://www.adacore.com/sparkpro) - A subset of Ada designed for high-integrity and safety-critical systems. Not to be confused with the Spark big data processing engine.
 
 ## Solvers and Model Checkers
 
@@ -26,3 +29,15 @@
 + [SPIN](http://spinroot.com/spin/whatispin.html) - A popular model checker for verifying concurrent systems.
 + [NuSMV](https://nusmv.fbk.eu/) - A symbolic model checker for finite state systems.
 + [TLA+ Toolbox](https://lamport.azurewebsites.net/tla/toolbox.html) - An integrated development environment for TLA+ specifications.
+
+## Methods
+
+- [B Method](https://en.wikipedia.org/wiki/B-Method) - A formal method for software development and system design, based on refinement and proof.
+
+## Books and Tutorials
+
++ [The Essence of Software](https://essenceofsoftware.com/) - A book by Daniel Jackson on software design using formal methods.
++ [Software Foundations](https://softwarefoundations.cis.upenn.edu/) - A series of textbooks on formal verification using Coq.
++ [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/) - A book by Adam Chlipala on programming with dependent types using Coq.
++ [Software Abstractions](https://mitpress.mit.edu/books/software-abstractions) - A book by Daniel Jackson on software modeling and analysis using Alloy.
++ [Pratical Alloy](https://practicalalloy.github.io/) - A practical guide to using Alloy for software modeling.
