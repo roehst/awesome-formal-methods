@@ -39,11 +39,11 @@
 
 ## Big Tech Companies Using Formal Methods
 
-+ [Amazon Web Services (AWS)](https://www.amazon.science/blog/how-aws-uses-formal-methods) - AWS uses TLA+ and other formal methods to verify the correctness of critical systems like S3, DynamoDB, and EC2.
-+ [Microsoft](https://www.microsoft.com/en-us/research/project/z3-3/) - Microsoft Research developed Z3 SMT solver and uses formal methods in Windows kernel verification, Azure services, and cloud infrastructure.
-+ [Intel](https://www.intel.com/content/www/us/en/research/overview.html) - Intel uses formal verification extensively for CPU design validation and microprocessor verification.
-+ [Meta (Facebook)](https://engineering.fb.com/2019/04/08/developer-tools/infer/) - Meta developed Infer, a static analysis tool based on formal methods, used to find bugs in code before production.
-+ [Apple](https://swift.org/) - Apple incorporates formal methods in the development of Swift and for security-critical components of iOS and macOS.
+- [Amazon Web Services (AWS)](https://www.amazon.science/blog/how-aws-uses-formal-methods) - AWS uses TLA+ and other formal methods to verify the correctness of critical systems like S3, DynamoDB, and EC2.
+- [Microsoft](https://www.microsoft.com/en-us/research/project/z3-3/) - Microsoft Research developed Z3 SMT solver and uses formal methods in Windows kernel verification, Azure services, and cloud infrastructure.
+- [Intel](https://www.intel.com/content/www/us/en/research/overview.html) - Intel uses formal verification extensively for CPU design validation and microprocessor verification.
+- [Meta (Facebook)](https://engineering.fb.com/2019/04/08/developer-tools/infer/) - Meta developed Infer, a static analysis tool based on formal methods, used to find bugs in code before production.
+- [Apple](https://developer.apple.com/security/) - Apple uses formal methods in security-critical components of iOS and macOS, and in the development of programming languages like Swift.
 
 ## Books and Tutorials
 
